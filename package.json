@@ -1,0 +1,43 @@
+{
+  "scripts": {
+    "test": "mocha --watch --require babel-register --recursive",
+    "build": "babel src --out-dir js",
+    "prepublish": "npm run build",
+    "watch": "watch \"npm run build\" ./src"
+  },
+  "main": "js/index.js",
+  "license": "MIT",
+  "babel": {
+    "presets": [
+      "env"
+    ],
+    "plugins": [
+      "transform-object-rest-spread"
+    ]
+  },
+  "name": "pubcore-reducer-datatable",
+  "version": "1.0.0",
+  "description": "redux reducers to manage state of datatables",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pubcore/reducerDatatable.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/pubcore/reducerDatatable/issues"
+  },
+  "homepage": "https://github.com/pubcore/reducerDatatable#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "chai": "^4.1.2",
+    "eslint": "^4.9.0",
+    "eslint-plugin-mocha": "^4.11.0",
+    "mocha": "^4.0.1",
+    "watch": "^1.0.2"
+  },
+  "dependencies": {
+    "redux-create-reducer": "^1.1.1"
+  }
+}
