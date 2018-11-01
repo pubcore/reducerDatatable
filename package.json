@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "test": "mocha --watch --require babel-register --recursive",
+    "test": "mocha --require babel-register --recursive",
     "build": "babel src --out-dir js",
     "prepublish": "npm run build",
     "watch": "watch \"npm run build\" ./src"
@@ -30,7 +30,7 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
+    "babel-preset-env": "^1.7.0",
     "chai": "^4.1.2",
     "eslint": "^4.9.0",
     "eslint-plugin-mocha": "^4.11.0",
