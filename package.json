@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "test": "mocha --require babel-register --recursive",
+    "test": "mocha --require @babel/register --recursive",
     "build": "babel src --out-dir js",
     "prepublish": "npm run build",
     "watch": "watch \"npm run build\" ./src"
@@ -9,10 +9,10 @@
   "license": "MIT",
   "babel": {
     "presets": [
-      "env"
+      "@babel/preset-env"
     ],
     "plugins": [
-      "transform-object-rest-spread"
+      "@babel/plugin-proposal-object-rest-spread"
     ]
   },
   "name": "pubcore-reducer-datatable",
@@ -28,16 +28,18 @@
   },
   "homepage": "https://github.com/pubcore/reducerDatatable#readme",
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "chai": "^4.1.2",
-    "eslint": "^4.9.0",
-    "eslint-plugin-mocha": "^4.11.0",
-    "mocha": "^4.0.1",
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/register": "^7.4.4",
+    "chai": "^4.2.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-mocha": "^4.12.1",
+    "mocha": "^6.1.4",
     "watch": "^1.0.2"
   },
   "dependencies": {
-    "redux-create-reducer": "^1.1.1"
+    "redux-create-reducer": "^1.2.0"
   }
 }
