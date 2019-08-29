@@ -16,7 +16,7 @@
     ]
   },
   "name": "pubcore-reducer-datatable",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "redux reducers to manage state of datatables",
   "repository": {
     "type": "git",
