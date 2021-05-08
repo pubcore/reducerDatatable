@@ -3,7 +3,7 @@
     "test": "mocha --require @babel/register --recursive",
     "build": "babel src --out-dir js",
     "prepublish": "npm run build",
-    "watch": "watch \"npm run build\" ./src"
+    "watch": "babel --watch src --out-dir js"
   },
   "main": "js/index.js",
   "license": "MIT",
@@ -34,11 +34,10 @@
     "@babel/preset-env": "^7.9.0",
     "@babel/register": "^7.9.0",
     "chai": "^4.2.0",
-    "eslint": "^6.8.0",
-    "eslint-plugin-mocha": "^4.12.1",
-    "mocha": "^7.1.1",
-    "nyc": "^15.0.0",
-    "watch": "^1.0.2"
+    "eslint": "^7.26.0",
+    "eslint-plugin-mocha": "^8.1.0",
+    "mocha": "^8.4.0",
+    "nyc": "^15.0.0"
   },
   "dependencies": {
     "redux-create-reducer": "^1.2.0"
